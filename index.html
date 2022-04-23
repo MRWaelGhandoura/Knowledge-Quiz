@@ -31,20 +31,34 @@
   </div>
 </form>
 
+<!--Question Area-->
+<div class="container">
+  <div id="question-container" class="hide">
+    <div id="question">Question</div>
+    <div id="answer-button"></div>
+  </div>
+
+</div>
+
 <!--Score area-->
 <div class="hide" id="score-area">
   <p class="scores">Correct Answers: <span id="score">0</span></p>
   <p class="scores">Incorrect Answers: <span id="incorrect">0</span></p>
 </div>
 
+<button id="howToButton">How To</button>
+
 <!--Rules area-->
-<div>
+<div id="myModal" class="modal">
+  <div class="modal-content">
+  <button id="closeHowTo">&times;</button>
   <h2>Rules</h2>
   <ul>
-    <li>The Quiz has 5 Questions with 4 multiple choices with one is correct</li>
+    <li>The Quiz has 5 Questions with 4 multiple choices which one is correct</li>
     <li>Every question has a timer of 40 seconds</li>
     <p>Enjoy the quiz and have a nice day!</p>
   </ul>
+  </div>
 </div>
 
 
