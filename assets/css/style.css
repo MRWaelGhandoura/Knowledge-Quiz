@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
 *, *::before, ::after{
     box-sizing: border-box;
+    font-family: 'Poppins','Roboto', sans-serif;
 }
 
 body {
@@ -51,7 +52,7 @@ body.wrong {
   }
 
   .btn {
-    border: 1px solid black;
+    border: 1px solid hsl(var(--hue), 100%, 30%);
     padding: 10px 20px;
     border-radius: 4px;
     font-size: 24px;
@@ -59,6 +60,7 @@ body.wrong {
     background: #FFAFCC;
     box-shadow: 0px 0px 14px -3px rgba(0, 0, 0, 0.7);
     outline: none;
+    --hue: var(--hue-neutral);
   }
 
   .btn:hover {
