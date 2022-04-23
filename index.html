@@ -1,96 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="The best quiz for any animal lover to test their animal knowledge.">
-  <meta name="keywords" content="quiz, animal quiz, animal, animal trivia, trivia">
-  <link rel="stylesheet" href="assets/CSS/style.css">
+  <meta name="description" content="knowledge Quiz to test your knowledge">
+  <meta name="keywords" content="Quiz, knowledge">
+  <link rel="stylesheet" href="assets/css/style.css">
 
-
-  <title>Quiz App</title>
+  <title>knowledge Quiz</title>
 </head>
-
 <body>
-  <!-- Header -->
-  <header>
-    <h1 id="logo">The Big Animal Quiz</h1>
-  </header>
+  <!--Header-->
+<header>
+<h1 id="logo">Knowledge Quiz</h1>
+</header>
 
-  <div class="quiz-container">
-    <h1 class="hide" id="greeting">Welcome, <span id="username"></span>!</h1>
-    <!-- Form to collect name -->
-    <form id="nameCollector" onsubmit="event.preventDefault();">
-      <!-- name -->
-      <label class="input-label" for="fname">What's your name?</label>
-      <div class="input-group">
-        <input type="text" id="fname" class="name-input" name="fname" placeholder="Your Name" required />
-        <button id="welcome" class="name-button">Enter</button>
-      </div>
-    </form>
-    <!-- Question Container -->
-    <div id="quiz-interaction" class="container hide">
-      <div id="question-container" class="hide">
-        <div id="question"></div>
-        <div id="picture" class="hide img-wrapper"></div>
-        <div id="answer-buttons" class="btn-grid"></div>
-      </div>
-      <div class="controls" id="quizButtonContainer"></div>
-      <div>
-        <button id="next-btn" class="next-btn btn hide">Next</button>
-        <button id="restart-btn" class="restart-btn btn hide">
-          Restart
-        </button>
-      </div>
-    </div>
+<div class="quiz-container">
+<h1>welcome!</h1>
+</div>
 
-    <!-- Score Container -->
-    <div class="hide" id="score-area">
-      <p class="scores">Correct Answers: <span id="score">0</span></p>
-      <p class="scores">Incorrect Answers: <span id="incorrect">0</span></p>
-    </div>
 
-    <button id="howToButton">How To</button>
-
-    <!-- Rules Modal -->
-    <div id="myModal" class="modal">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <button id="closeHowTo">&times;</button>
-        <h2>How To Play</h2>
-        <ul>
-          <li>
-            What Dog Is This: A game where a picture is given and you choose
-            what type of dog is in the picture
-          </li>
-          <li>
-            Animal Trivia: A true or false quiz, test your animal knowledge!
-          </li>
-          <li>
-            Aligator VS Crocodile: A game where a picture is shown and you
-            decide if it's an aligator or a crocodile.
-          </li>
-        </ul>
-        <p>
-          Each game has only 5 questions, but there's a wide variety of
-          questions so if you play again, you may not get repeated questions.
-        </p>
-      </div>
-    </div>
-  </div>
-  <!-- Footer -->
-
-  <footer>
-    <p>Made with love by KateEllen</p>
-  </footer>
-  <!-- Scripts -->
-
-  <script src="assets/js/questions.js"></script>
   <script src="assets/js/script.js"></script>
-  <script src="https://kit.fontawesome.com/546096f64a.js" crossorigin="anonymous"></script>
-  <noscript>Your browser does not support JavaScript!</noscript>
+  <script src="assets/js/questions-page.js"></script>
+  <noscript>The browser does not support Javascript ! Try another browser!</noscript>
 </body>
-
 </html>
