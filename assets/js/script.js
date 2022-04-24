@@ -86,3 +86,23 @@ function incrementWrongAnswer() {
   let oldScore = parseInt(document.getElementById("incorrect").innerText);
   document.getElementById("incorrect").innerText = ++oldScore;
 }
+
+const modal = document.getElementById("myModal");
+
+ const howToButton = document.getElementById("howToButton");
+
+ const closeHowTo = document.getElementById("closeHowTo");
+
+ howToButton.onclick = function () {
+   modal.style.display = "block";
+ };
+
+ closeHowTo.onclick = function () {
+   modal.style.display = "none";
+ };
+
+ window.onclick = function (event) {
+   if (event.target === modal) {
+     modal.style.display = "none";
+   }
+ };
