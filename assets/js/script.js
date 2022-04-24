@@ -106,3 +106,19 @@ const modal = document.getElementById("myModal");
      modal.style.display = "none";
    }
  };
+
+ function welcome() {
+  document.getElementById("greeting").classList.remove("hide");
+  // update the welcome to the entered name, or default to Player 1
+  if (document.getElementById("fname").value.length > 0) {
+    document.getElementById("username").innerHTML = document.getElementById(
+      "fname"
+    ).value;
+  } else {
+    document.getElementById("username").innerHTML = "Player 1";
+  }
+  // hide name entry
+  document.getElementById("nameCollector").classList.add("hide");
+  // Show the quiz
+  document.getElementById("quiz-interaction").classList.remove("hide");
+}
