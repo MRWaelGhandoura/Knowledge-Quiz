@@ -122,3 +122,13 @@ const modal = document.getElementById("myModal");
   // Show the quiz
   document.getElementById("quiz-interaction").classList.remove("hide");
 }
+
+
+// Checks if answer is correct and adds to score
+function checkAnswer(isCorrect) {
+  if (isCorrect) {
+    incrementScore();
+  } else {
+    incrementWrongAnswer();
+  }
+}
