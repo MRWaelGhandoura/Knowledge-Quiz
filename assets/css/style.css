@@ -153,3 +153,27 @@ body.wrong {
       rgba(0, 119, 156, 0.7) 98%);
   cursor: pointer;
 }
+
+
+/*Modal Button*/
+#howToButton {
+  margin-top: 20px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 24px;
+  color: #fff;
+  background: rgb(218, 193, 250);
+  background: linear-gradient(180deg,
+      rgba(218, 193, 250, 1) 0%,
+      rgba(160, 96, 241, 1) 98%);
+  -webkit-box-shadow: 0px 0px 14px -3px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 0px 14px -3px rgba(0, 0, 0, 0.7);
+  transition: box-shadow 0.5s ease;
+}
+
+#howToButton:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.7);
+}
