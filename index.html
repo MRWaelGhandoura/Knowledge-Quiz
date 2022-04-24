@@ -17,18 +17,15 @@
 </header>
 
 <div class="quiz-container">
-<h1>welcome!</h1>
-</div>
-
-<!--Name Entry within a form(label)-->
-<form>
-  <label>
-
-  </label>
-  <div>
-    <input type="text" id="fname" class="name-input" name="fname" placeholder="Enter your Name" required />
-        <button id="welcome" class="name-button">Enter</button>
-  </div>
+  <h1 class="hide" id="greeting">Welcome, <span id="username"></span>!</h1>
+  <!-- Collect name Form -->
+  <form id="nameCollector" onsubmit="event.preventDefault();">
+    <!-- Name Entry -->
+    <label class="input-label" for="fname">What's your name?</label>
+    <div class="input-group">
+      <input type="text" id="fname" class="name-input" name="fname" placeholder="Your Name" required />
+      <button id="welcome" class="name-button">Enter</button>
+    </div>
 </form>
 
 <!--Question Area-->
